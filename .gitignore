@@ -39,6 +39,7 @@
 *.app
 
 # Build directories
+*/build/
 build/
 Build/
 build-*/
@@ -66,3 +67,7 @@ vcpkg_installed/
 # test output & cache
 Testing/
 .cache/
+
+#VSCode 
+.vscode/
+
