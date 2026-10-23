@@ -1,0 +1,55 @@
+Non-Parallel Benchmark
+=======================
+Serial:  pi with 100000000 steps is 3.1415926535904264 in 0.381511 seconds
+Serial (Ofast): pi with 100000000 steps is 3.1415926535900236 in 0.033856 seconds
+
+Parallel Comparison (v1 vs v2)
+===============================
+Threads: 1
+  v1:        pi with 1000000000 steps is 3.1415926535899708 in 3.76207 seconds
+  v1_ofast:  pi with 1000000000 steps is 3.1415926535899708 in 0.927959 seconds
+  v2:        pi with 1000000000 steps is 3.1415926535899708 in 3.64977 seconds
+  v2_ofast:  pi with 1000000000 steps is 3.1415926535899708 in 0.897212 seconds
+
+Threads: 2
+  v1:        pi with 1000000000 steps is 3.1415926535900072 in 1.93162 seconds
+  v1_ofast:  pi with 1000000000 steps is 3.1415926535900072 in 0.461907 seconds
+  v2:        pi with 1000000000 steps is 3.1415926535900072 in 1.96742 seconds
+  v2_ofast:  pi with 1000000000 steps is 3.1415926535900072 in 0.469992 seconds
+
+Threads: 3
+  v1:        pi with 1000000000 steps is 3.1415926535899144 in 1.32784 seconds
+  v1_ofast:  pi with 1000000000 steps is 3.1415926535899144 in 0.315191 seconds
+  v2:        pi with 1000000000 steps is 3.1415926535899144 in 1.31686 seconds
+  v2_ofast:  pi with 1000000000 steps is 3.1415926535899144 in 0.324185 seconds
+
+Threads: 4
+  v1:        pi with 1000000000 steps is 3.1415926535897687 in 0.950613 seconds
+  v1_ofast:  pi with 1000000000 steps is 3.1415926535897682 in 0.234599 seconds
+  v2:        pi with 1000000000 steps is 3.1415926535897682 in 1.0056 seconds
+  v2_ofast:  pi with 1000000000 steps is 3.1415926535897682 in 0.235117 seconds
+
+Threads: 5
+  v1:        pi with 1000000000 steps is 3.1415926535896923 in 0.804328 seconds
+  v1_ofast:  pi with 1000000000 steps is 3.1415926535896923 in 0.212164 seconds
+  v2:        pi with 1000000000 steps is 3.1415926535896923 in 1.10429 seconds
+  v2_ofast:  pi with 1000000000 steps is 3.1415926535896923 in 0.217248 seconds
+
+Threads: 6
+  v1:        pi with 1000000000 steps is 3.1415926535897052 in 0.690294 seconds
+  v1_ofast:  pi with 1000000000 steps is 3.1415926535897052 in 0.191303 seconds
+  v2:        pi with 1000000000 steps is 3.1415926535897047 in 1.22563 seconds
+  v2_ofast:  pi with 1000000000 steps is 3.1415926535897047 in 0.189484 seconds
+
+Threads: 7
+  v1:        pi with 1000000000 steps is 3.1415926535896879 in 0.640399 seconds
+  v1_ofast:  pi with 1000000000 steps is 3.1415926535896879 in 0.178899 seconds
+  v2:        pi with 1000000000 steps is 3.1415926535896883 in 1.03759 seconds
+  v2_ofast:  pi with 1000000000 steps is 3.1415926535896879 in 0.180028 seconds
+
+Threads: 8
+  v1:        pi with 1000000000 steps is 3.1415926535898282 in 0.563559 seconds
+  v1_ofast:  pi with 1000000000 steps is 3.1415926535898278 in 0.167382 seconds
+  v2:        pi with 1000000000 steps is 3.1415926535898278 in 0.946846 seconds
+  v2_ofast:  pi with 1000000000 steps is 3.1415926535898278 in 0.151687 seconds
+
