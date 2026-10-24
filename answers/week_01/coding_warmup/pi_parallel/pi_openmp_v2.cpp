@@ -31,8 +31,12 @@ int main() {
   for (double ls : local_sums) sum += ls;
 
   double pi = sum * 4 * width;  // compute pi
+  volatile double pi_sink = pi;  // keeps -Ofast from removing the loop
   double run_time = omp_get_wtime() - start_time;
 
-  cout << "pi with " << num_steps << " steps is " << setprecision(17) << pi
-       << " in " << setprecision(6) << run_time << " seconds\n";
+  cout << setprecision(6) << run_time
+       << " sec.";  // short output or comparison script
+
+  // cout << "pi with " << num_steps << " steps is " << setprecision(17) << pi
+  //      << " in " << setprecision(6) << run_time << " seconds\n";
 }

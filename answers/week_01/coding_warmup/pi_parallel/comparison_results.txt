@@ -1,55 +1,24 @@
 Non-Parallel Benchmark
 =======================
-Serial:  pi with 100000000 steps is 3.1415926535904264 in 0.381511 seconds
-Serial (Ofast): pi with 100000000 steps is 3.1415926535900236 in 0.033856 seconds
+Serial:  3.76511 sec.
+Serial (Ofast): 0.341515 sec.
 
-Parallel Comparison (v1 vs v2)
-===============================
-Threads: 1
-  v1:        pi with 1000000000 steps is 3.1415926535899708 in 3.76207 seconds
-  v1_ofast:  pi with 1000000000 steps is 3.1415926535899708 in 0.927959 seconds
-  v2:        pi with 1000000000 steps is 3.1415926535899708 in 3.64977 seconds
-  v2_ofast:  pi with 1000000000 steps is 3.1415926535899708 in 0.897212 seconds
+Parallel Comparison (v1 vs v2 vs v3)
+====================================
 
-Threads: 2
-  v1:        pi with 1000000000 steps is 3.1415926535900072 in 1.93162 seconds
-  v1_ofast:  pi with 1000000000 steps is 3.1415926535900072 in 0.461907 seconds
-  v2:        pi with 1000000000 steps is 3.1415926535900072 in 1.96742 seconds
-  v2_ofast:  pi with 1000000000 steps is 3.1415926535900072 in 0.469992 seconds
-
-Threads: 3
-  v1:        pi with 1000000000 steps is 3.1415926535899144 in 1.32784 seconds
-  v1_ofast:  pi with 1000000000 steps is 3.1415926535899144 in 0.315191 seconds
-  v2:        pi with 1000000000 steps is 3.1415926535899144 in 1.31686 seconds
-  v2_ofast:  pi with 1000000000 steps is 3.1415926535899144 in 0.324185 seconds
-
-Threads: 4
-  v1:        pi with 1000000000 steps is 3.1415926535897687 in 0.950613 seconds
-  v1_ofast:  pi with 1000000000 steps is 3.1415926535897682 in 0.234599 seconds
-  v2:        pi with 1000000000 steps is 3.1415926535897682 in 1.0056 seconds
-  v2_ofast:  pi with 1000000000 steps is 3.1415926535897682 in 0.235117 seconds
-
-Threads: 5
-  v1:        pi with 1000000000 steps is 3.1415926535896923 in 0.804328 seconds
-  v1_ofast:  pi with 1000000000 steps is 3.1415926535896923 in 0.212164 seconds
-  v2:        pi with 1000000000 steps is 3.1415926535896923 in 1.10429 seconds
-  v2_ofast:  pi with 1000000000 steps is 3.1415926535896923 in 0.217248 seconds
-
-Threads: 6
-  v1:        pi with 1000000000 steps is 3.1415926535897052 in 0.690294 seconds
-  v1_ofast:  pi with 1000000000 steps is 3.1415926535897052 in 0.191303 seconds
-  v2:        pi with 1000000000 steps is 3.1415926535897047 in 1.22563 seconds
-  v2_ofast:  pi with 1000000000 steps is 3.1415926535897047 in 0.189484 seconds
-
-Threads: 7
-  v1:        pi with 1000000000 steps is 3.1415926535896879 in 0.640399 seconds
-  v1_ofast:  pi with 1000000000 steps is 3.1415926535896879 in 0.178899 seconds
-  v2:        pi with 1000000000 steps is 3.1415926535896883 in 1.03759 seconds
-  v2_ofast:  pi with 1000000000 steps is 3.1415926535896879 in 0.180028 seconds
-
-Threads: 8
-  v1:        pi with 1000000000 steps is 3.1415926535898282 in 0.563559 seconds
-  v1_ofast:  pi with 1000000000 steps is 3.1415926535898278 in 0.167382 seconds
-  v2:        pi with 1000000000 steps is 3.1415926535898278 in 0.946846 seconds
-  v2_ofast:  pi with 1000000000 steps is 3.1415926535898278 in 0.151687 seconds
-
+Threads  v1              v1_ofast        v2              v2_ofast        v3              v3_ofast       
+-------  --------------- --------------- --------------- --------------- --------------- ---------------
+1        3.76724 sec.    0.952324 sec.   3.78208 sec.    0.96236 sec.    4.3429 sec.     0.525766 sec.  
+2        1.91426 sec.    0.526309 sec.   2.4307 sec.     0.509116 sec.   1.98646 sec.    0.269618 sec.  
+3        1.55106 sec.    0.403964 sec.   2.07 sec.       0.446092 sec.   1.52435 sec.    0.24695 sec.   
+4        1.33606 sec.    0.374213 sec.   1.92623 sec.    0.328436 sec.   1.40232 sec.    0.215604 sec.  
+5        1.22199 sec.    0.427365 sec.   2.28821 sec.    0.35471 sec.    1.48699 sec.    0.211381 sec.  
+6        1.34123 sec.    0.483299 sec.   2.41205 sec.    0.436207 sec.   0.947437 sec.   0.100497 sec.  
+7        0.636332 sec.   0.179435 sec.   1.01924 sec.    0.175796 sec.   0.606015 sec.   0.096119 sec.  
+8        0.587635 sec.   0.160866 sec.   1.03548 sec.    0.165353 sec.   0.63585 sec.    0.095144 sec.  
+3769 sec.   1.46066 sec.    0.20176 sec.   
+4        1.07712 sec.    0.315141 sec.   1.7472 sec.     0.303208 sec.   1.07439 sec.    0.162788 sec.  
+5        1.03009 sec.    0.337317 sec.   1.68395 sec.    0.32697 sec.    1.04987 sec.    0.186378 sec.  
+6        0.966065 sec.   0.264433 sec.   1.6558 sec.     0.32534 sec.    1.26845 sec.    0.170763 sec.  
+7        0.969721 sec.   0.283111 sec.   1.64413 sec.    0.312704 sec.   1.0669 sec.     0.120557 sec.  
+8        0.941687 sec.   0.247245 sec.   1.32242 sec.    0.277561 sec.   0.864292 sec.   0.151743 sec.  
