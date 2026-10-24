@@ -71,3 +71,5 @@ Testing/
 #VSCode 
 .vscode/
 
+# self written makefiles
+!answers/week_01/coding_warmup/pi_parallel/Makefile
