@@ -1,0 +1,12 @@
+Serial:         run_time: 7.29746 s
+Serial (Ofast): run_time: 1.99122 s
+
+Threads  OpenMP                    OpenMP (Ofast)            OpenMP v2                 OpenMP v2 (Ofast)        
+1        run_time: 7.59495 s       run_time: 1.89927 s       run_time: 7.28271 s       run_time: 2.11543 s      
+2        run_time: 5.5447 s        run_time: 3.30042 s       run_time: 3.75569 s       run_time: 0.993062 s     
+3        run_time: 4.19154 s       run_time: 3.34276 s       run_time: 2.6403 s        run_time: 0.727357 s     
+4        run_time: 3.66135 s       run_time: 3.56518 s       run_time: 1.92744 s       run_time: 0.517738 s     
+5        run_time: 7.03284 s       run_time: 2.67483 s       run_time: 1.78063 s       run_time: 0.468782 s     
+6        run_time: 5.89703 s       run_time: 2.62525 s       run_time: 1.61551 s       run_time: 0.379442 s     
+7        run_time: 7.31247 s       run_time: 4.46964 s       run_time: 1.54222 s       run_time: 0.416342 s     
+8        run_time: 6.86114 s       run_time: 3.86183 s       run_time: 1.58964 s       run_time: 0.354828 s     
