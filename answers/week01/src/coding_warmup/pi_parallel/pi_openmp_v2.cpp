@@ -30,7 +30,7 @@ int main() {
 
   for (double ls : local_sums) sum += ls;
 
-  double pi = sum * 4 * width;  // compute pi
+  double pi = sum * 4 * width;   // compute pi
   volatile double pi_sink = pi;  // keeps -Ofast from removing the loop
   double run_time = omp_get_wtime() - start_time;
 

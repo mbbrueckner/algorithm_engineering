@@ -26,7 +26,7 @@ int main() {
 #pragma omp atomic  // only one thread performs the update of the sum
     sum += sum_local;
   }  // parallel region ends here
-  double pi = sum * 4 * width;  // compute pi
+  double pi = sum * 4 * width;   // compute pi
   volatile double pi_sink = pi;  // keeps -Ofast from removing the loop
   double run_time = omp_get_wtime() - start_time;
   cout << setprecision(6) << run_time

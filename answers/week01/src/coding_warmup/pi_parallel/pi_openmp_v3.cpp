@@ -17,7 +17,7 @@ int main() {
     double x = (i + 0.5) * width;       // midpoint
     sum = sum + (1.0 / (1.0 + x * x));  // add new height of a rectangle
   }
-  double pi = sum * 4 * width;  // compute pi
+  double pi = sum * 4 * width;   // compute pi
   volatile double pi_sink = pi;  // keeps -Ofast from removing the loop
   double run_time = omp_get_wtime() - start_time;
 
